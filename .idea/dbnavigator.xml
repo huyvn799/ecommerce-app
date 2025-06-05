@@ -62,6 +62,9 @@ SELECT * FROM store_api.users;]]></console>
     <last-used-operator value="EQUAL" />
     <filters />
   </component>
+  <component name="DBNavigator.Project.ParserDiagnosticsManager">
+    <diagnostics-history />
+  </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
       <connection id="c6a9e111-2608-41f1-9c41-80a10b51bb6b" active="true" signed="true">
