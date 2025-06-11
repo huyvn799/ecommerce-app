@@ -1,6 +1,7 @@
 package com.codewithmosh.store.mappers;
 
 import com.codewithmosh.store.dtos.ResgisterUserRequest;
+import com.codewithmosh.store.dtos.UpdateUserRequest;
 import com.codewithmosh.store.dtos.UserDto;
 import com.codewithmosh.store.entities.User;
 import java.time.LocalDateTime;
@@ -9,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-06-12T04:08:44+0700",
+    date = "2025-06-12T05:04:08+0700",
     comments = "version: 1.6.3, compiler: Eclipse JDT (IDE) 3.42.0.v20250514-1000, environment: Java 21.0.7 (Eclipse Adoptium)"
 )
 @Component
@@ -49,5 +50,15 @@ public class UserMapperImpl implements UserMapper {
         user.password( request.getPassword() );
 
         return user.build();
+    }
+
+    @Override
+    public void update(UpdateUserRequest request, User user) {
+        if ( request == null ) {
+            return;
+        }
+
+        user.setEmail( request.getEmail() );
+        user.setName( request.getName() );
     }
 }
