@@ -22,9 +22,13 @@ public class UserController {
     @GetMapping()
     // method: GET
     public Iterable<UserDto> getAllUsers(
+            // Sử dụng Request Header
+            @RequestHeader(required = false, name = "x-auth-token") String authToken,
             // Lưu ý phải có những thuộc tính này khi khai báo param
             @RequestParam(required = false, defaultValue = "", name = "sort") String sortBy
     ) {
+        // In ra console x-auth-token
+        System.out.println(authToken);
         // Nếu trong value của param sort ko phải name hoặc email thì trả về 1 giá trị hợp lệ
         if (!Set.of("name", "email").contains(sortBy)) {
             sortBy = "name";

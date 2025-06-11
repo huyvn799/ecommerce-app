@@ -44,8 +44,11 @@ public class User {
         address.setUser(null);
     }
 
-    @OneToOne(mappedBy = "user", cascade = CascadeType.REMOVE)
-    private Profile profile;
+    // bỏ nó đi vì mỗi khi đối tượng user được khởi tạo
+    // thì nó sẽ tự động Hibernate Eager Loading cho Entity Profile vì association 1<->1
+//    => xoá đi để tôí ưu hoá performance
+//    @OneToOne(mappedBy = "user", cascade = CascadeType.REMOVE)
+//    private Profile profile;
 
     @ManyToMany
     @JoinTable(
