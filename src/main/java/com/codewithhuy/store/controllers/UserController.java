@@ -1,12 +1,5 @@
-package com.codewithmosh.store.controllers;
+package com.codewithhuy.store.controllers;
 
-import com.codewithmosh.store.dtos.ChangePasswordRequest;
-import com.codewithmosh.store.dtos.ResgisterUserRequest;
-import com.codewithmosh.store.dtos.UpdateUserRequest;
-import com.codewithmosh.store.dtos.UserDto;
-import com.codewithmosh.store.entities.User;
-import com.codewithmosh.store.mappers.UserMapper;
-import com.codewithmosh.store.repositories.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
@@ -14,6 +7,14 @@ import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
+
+import com.codewithhuy.store.dtos.ChangePasswordRequest;
+import com.codewithhuy.store.dtos.ResgisterUserRequest;
+import com.codewithhuy.store.dtos.UpdateUserRequest;
+import com.codewithhuy.store.dtos.UserDto;
+import com.codewithhuy.store.entities.User;
+import com.codewithhuy.store.mappers.UserMapper;
+import com.codewithhuy.store.repositories.UserRepository;
 
 import java.util.Set;
 

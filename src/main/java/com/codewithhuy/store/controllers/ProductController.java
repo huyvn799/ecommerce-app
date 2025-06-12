@@ -1,10 +1,4 @@
-package com.codewithmosh.store.controllers;
-
-import com.codewithmosh.store.dtos.ProductDto;
-import com.codewithmosh.store.entities.Product;
-import com.codewithmosh.store.mappers.ProductMapper;
-import com.codewithmosh.store.repositories.CategoryRepository;
-import com.codewithmosh.store.repositories.ProductRepository;
+package com.codewithhuy.store.controllers;
 
 import lombok.AllArgsConstructor;
 import lombok.experimental.var;
@@ -13,6 +7,12 @@ import org.springframework.data.domain.Sort;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
+
+import com.codewithhuy.store.dtos.ProductDto;
+import com.codewithhuy.store.entities.Product;
+import com.codewithhuy.store.mappers.ProductMapper;
+import com.codewithhuy.store.repositories.CategoryRepository;
+import com.codewithhuy.store.repositories.ProductRepository;
 
 import java.util.List;
 import java.util.Set;

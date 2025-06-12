@@ -1,4 +1,4 @@
-package com.codewithmosh.store.entities;
+package com.codewithhuy.store.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,4 +1,4 @@
-package com.codewithmosh.store.dtos;
+package com.codewithhuy.store.dtos;
 
 import java.math.BigDecimal;
 

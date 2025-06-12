@@ -1,10 +1,11 @@
-package com.codewithmosh.store.mappers;
+package com.codewithhuy.store.mappers;
 
-import com.codewithmosh.store.dtos.ProductDto;
-import com.codewithmosh.store.entities.Product;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;
+
+import com.codewithhuy.store.dtos.ProductDto;
+import com.codewithhuy.store.entities.Product;
 
 @Mapper(componentModel = "spring")
 public interface ProductMapper {

@@ -1,12 +1,12 @@
-package com.codewithmosh.store.repositories;
-
-import com.codewithmosh.store.entities.Product;
+package com.codewithhuy.store.repositories;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+
+import com.codewithhuy.store.entities.Product;
 
 public interface ProductRepository<P> extends JpaRepository<Product, Long> {
     @EntityGraph(attributePaths = "category")

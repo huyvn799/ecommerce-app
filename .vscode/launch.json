@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "StoreApplication",
+            "request": "launch",
+            "mainClass": "com.codewithhuy.store.StoreApplication",
+            "projectName": "store"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-StoreApplication<store>",
             "request": "launch",
             "cwd": "${workspaceFolder}",

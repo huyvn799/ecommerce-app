@@ -1,12 +1,13 @@
-package com.codewithmosh.store.mappers;
+package com.codewithhuy.store.mappers;
 
-import com.codewithmosh.store.dtos.ResgisterUserRequest;
-import com.codewithmosh.store.dtos.UpdateUserRequest;
-import com.codewithmosh.store.dtos.UserDto;
-import com.codewithmosh.store.entities.User;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;
+
+import com.codewithhuy.store.dtos.ResgisterUserRequest;
+import com.codewithhuy.store.dtos.UpdateUserRequest;
+import com.codewithhuy.store.dtos.UserDto;
+import com.codewithhuy.store.entities.User;
 
 @Mapper(componentModel = "spring")
 public interface UserMapper {
